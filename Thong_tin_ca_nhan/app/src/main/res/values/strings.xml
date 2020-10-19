@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">THÔNG TIN CÁ NHÂN</string>
+    <string name="title">Thông tin cá nhân</string>
+    <string name="full_name">Họ Tên</string>
+</resources>

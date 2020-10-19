@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloerheader"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/textview"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/full_name"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:hint="@string/full_name"
+            android:textColor="#F44336"
+            android:textColorHint="#F44336"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="CMND:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:hint="CMND"
+            android:textColor="#F44336"
+            android:textColorHint="#F44336"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colornav"
+        android:gravity="center"
+        android:text="Bằng cấp"
+        android:textColor="@color/textview"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/rdoGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/rdoIntermediate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trung Cấp"/>
+
+        <RadioButton
+            android:id="@+id/rdoCollege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cao đẳng"/>
+
+        <RadioButton
+            android:id="@+id/rdoUniversity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đại học"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colornav"
+        android:gravity="center"
+        android:text="Sở thích"
+        android:textColor="@color/textview"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <CheckBox
+            android:id="@+id/cbReadNewspaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đọc báo"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbReadBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đọc sách"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbReadCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đọc coding"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colornav"
+        android:gravity="center"
+        android:text="Thông tin bổ sung"
+        android:textColor="@color/textview"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtAdditional"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_vertical"
+        android:hint="Nhập thông tin bổ sung"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnSendInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Gửi Thông tin"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>
